@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - LearnHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="user">
+
+    <header>
+        <h2>LearnHub</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="user.html">User</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>User Dashboard</h1>
+        <p>Choose a course and start learning today.</p>
+
+        <section class="form-box">
+            <h2>Student Details</h2>
+            <label for="studentName">Your Name</label>
+            <input type="text" id="studentName"
+                   placeholder="Enter your name">
+
+            <label for="studentEmail">Email Address</label>
+            <input type="email" id="studentEmail"
+                   placeholder="Enter your email">
+
+            <p class="small-text">
+                Enter your details before enrolling in a course.
+            </p>
+        </section>
+
+        <section>
+            <h2>Available Courses</h2>
+            <div id="userCourseList" class="card-container"></div>
+        </section>
+
+        <section>
+            <h2>My Enrolled Courses</h2>
+            <p>Total Enrollments:
+                <strong id="totalEnrollments">0</strong>
+            </p>
+            <div id="enrolledCourseList" class="card-container"></div>
+        </section>
+
+        <p id="userMessage" class="message"></p>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </main>
+
+    <footer>
+        <p>LearnHub User Panel</p>
+    </footer>
+
+</body>
+</html>
